@@ -1,0 +1,31 @@
+.btn:link,
+.btn:visited {
+  font-family: var(--font-fraunces);
+  font-weight: 700;
+  color: var(--color-neutral-blue);
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  border-radius: 10rem;
+}
+
+.btn--contact:link,
+.btn--contact:visited {
+  background-color: var(--color-neutral-white);
+  font-size: 1.6rem;
+  letter-spacing: -0.4px;
+  font-weight: 700;
+}
+
+.btn--features:link,
+.btn--features:visited {
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.btn--features:hover,
+.btn--features:active {
+  background-color: red;
+}

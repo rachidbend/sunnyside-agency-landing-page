@@ -1,0 +1,30 @@
+:root {
+  --font-barlow: "Barlow", sans-serif;
+  --font-fraunces: "Fraunces", serif;
+}
+
+.heading {
+  font-family: var(--font-fraunces);
+  font-weight: 900;
+}
+.heading--primary {
+  font-size: 5.6rem;
+  text-transform: uppercase;
+  color: var(--color-neutral-white);
+  letter-spacing: 10px;
+  margin-bottom: 9.3rem;
+}
+
+.heading--secondary {
+  font-size: 4rem;
+  color: var(--color-neutral-blue);
+  margin-bottom: 3.2rem;
+  font-weight: 900;
+}
+
+.heading--tertiary {
+  font-size: 2.8rem;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 3rem;
+}

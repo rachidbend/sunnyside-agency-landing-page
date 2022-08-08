@@ -1,0 +1,19 @@
+.nav {
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+
+  gap: 5rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: var(--color-neutral-white);
+
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+}
