@@ -16,12 +16,7 @@
     margin-left: 6%;
   }
   .feature-overlay {
-    position: absolute;
-    bottom: 3rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 54%;
-    text-align: center;
+    top: 60%;
   }
   .heading--tertiary {
     margin-bottom: 2.4rem;
@@ -30,6 +25,10 @@
   /*//////////////////
   // TESTIMONIALS
   //////////////////*/
+
+  .grid--3-cols {
+    gap: 2.4rem;
+  }
 
   .container {
     padding: 14rem 2rem 14rem 2rem;

@@ -178,7 +178,7 @@ html {
 
 .feature-overlay {
   position: absolute;
-  bottom: 6rem;
+  top: 66%;
   left: 50%;
   transform: translateX(-50%);
   width: 48%;
@@ -426,9 +426,21 @@ html {
     margin-bottom: 8.6rem;
     line-height: 1.8;
   }
+  .btn--features {
+    font-size: 1.8rem;
+  }
+  .feature-overlay {
+    top: 70%;
+  }
   .feature-overlay-text {
     font-size: 1.8rem;
     line-height: 1.8;
+  }
+  .grid--3-cols {
+    gap: 8rem;
+  }
+  .container {
+    max-width: 140rem;
   }
 }
 /**********************************/
@@ -447,12 +459,7 @@ html {
     margin-left: 6%;
   }
   .feature-overlay {
-    position: absolute;
-    bottom: 3rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 54%;
-    text-align: center;
+    top: 60%;
   }
   .heading--tertiary {
     margin-bottom: 2.4rem;
@@ -460,6 +467,9 @@ html {
   /*//////////////////
   // TESTIMONIALS
   //////////////////*/
+  .grid--3-cols {
+    gap: 2.4rem;
+  }
   .container {
     padding: 14rem 2rem 14rem 2rem;
     padding-bottom: 15.8rem;

@@ -18,9 +18,24 @@
     margin-bottom: 8.6rem;
     line-height: 1.8;
   }
+  .btn--features {
+    font-size: 1.8rem;
+  }
+
+  .feature-overlay {
+    top: 70%;
+  }
 
   .feature-overlay-text {
     font-size: 1.8rem;
     line-height: 1.8;
+  }
+
+  // Testimonials
+  .grid--3-cols {
+    gap: 8rem;
+  }
+  .container {
+    max-width: 140rem;
   }
 }
