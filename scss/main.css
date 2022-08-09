@@ -322,6 +322,10 @@ html {
   color: var(--color-neutral-white);
 }
 
+.btn--nav {
+  display: none;
+}
+
 .btn:link,
 .btn:visited {
   font-family: var(--font-fraunces);
@@ -491,5 +495,63 @@ html {
   }
   .testimonial__job {
     font-size: 1.2rem;
+  }
+}
+/**********************************/
+/* Below 944px (Tablets) */
+/**********************************/
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .btn--nav {
+    display: block;
+    background: none;
+    border: none;
+  }
+  .nav--main {
+    display: none;
+  }
+  .nav-open .nav--main {
+    display: flex;
+  }
+  .heading--primary {
+    font-size: 4.4rem;
+  }
+  .feature-text-box {
+    align-items: center;
+  }
+  .feature__container {
+    width: 62%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .heading--secondary {
+    font-size: 3.2rem;
+  }
+  .heading--secondary br {
+    display: none;
+  }
+  .feature__text {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    margin-bottom: 4rem;
+  }
+  .btn--features:link,
+.btn--features:visited {
+    font-size: 1.4rem;
+  }
+  .feature-overlay {
+    top: 58%;
+    left: 50%;
+    width: 54%;
+    text-align: center;
+  }
+  .heading--tertiary {
+    font-size: 2.8rem;
+  }
+  .feature-overlay-text {
+    font-size: 1.4rem;
+    line-height: 1.5;
   }
 }/*# sourceMappingURL=main.css.map */
