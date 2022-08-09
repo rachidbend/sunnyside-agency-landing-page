@@ -4,7 +4,6 @@
 .nav__list {
   display: flex;
   align-items: center;
-
   gap: 5rem;
 }
 
@@ -13,7 +12,33 @@
   font-size: 1.8rem;
   text-decoration: none;
   color: var(--color-neutral-white);
-
   font-family: "Barlow", sans-serif;
   font-weight: 500;
+
+  transition: all ease-out 200ms;
+}
+
+.nav__link:hover,
+.nav__link:active {
+  color: var(--color-primary-cyan-light);
+}
+
+.nav--footer {
+  margin-bottom: 7.8rem;
+}
+
+.nav__list--footer {
+  gap: 5.6rem;
+}
+
+.nav__link--footer:link,
+.nav__link--footer:visited {
+  color: var(--color-primary-cyan-light);
+  transition: color ease-out 200ms;
+  font-weight: 600;
+}
+
+.nav__link--footer:hover,
+.nav__link--footer:active {
+  color: var(--color-neutral-white);
 }

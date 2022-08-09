@@ -25,6 +25,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./scss/main.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/25c340a4cc.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Frontend Mentor | Sunnyside agency landing page</title>
 
@@ -65,7 +70,7 @@
 
       <div class="hero">
         <h1 class="heading heading--primary">We are creatives</h1>
-        <img src="./images/icon-arrow-down.svg" alt="" />
+        <img src="./images/icon-arrow-down.svg" alt="" class="hero__arrow" />
       </div>
     </section>
 
@@ -82,7 +87,9 @@
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
-          <a href="#" class="btn btn--features">Learn more</a>
+          <a href="#" class="btn btn--features btn--features-yellow"
+            >Learn more</a
+          >
         </div>
       </div>
       <div class="feature feature--img-box">
@@ -102,7 +109,7 @@
             photographers, videographers, and copywriters, we’ll build and
             extend your brand in digital places.
           </p>
-          <a href="#" class="btn btn--features">Learn more</a>
+          <a href="#" class="btn btn--features btn--features-red">Learn more</a>
         </div>
       </div>
       <!-- third row -->
@@ -189,28 +196,45 @@
     </section>
 
     <footer class="footer">
-      <div class="logo logo--footer">
-        <img src="./images/logo-footer.svg" alt="Sunnyside agency logo" />
-      </div>
-      <nav class="nav nav--footer">
-        <ul class="nav__list nav__list--footer">
-          <li>
-            <a href="#" class="nav__link nav__link--footer">About</a>
-          </li>
-          <li>
-            <a href="#" class="nav__link">Services</a>
-          </li>
-          <li>
-            <a href="#" class="nav__link">Projects</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container--footer">
+        <div class="logo logo--footer">
+          <img src="./images/logo-footer.svg" alt="Sunnyside agency logo" />
+        </div>
+        <nav class="nav nav--footer">
+          <ul class="nav__list nav__list--footer">
+            <li>
+              <a href="#" class="nav__link nav__link--footer">About</a>
+            </li>
+            <li>
+              <a href="#" class="nav__link nav__link--footer">Services</a>
+            </li>
+            <li>
+              <a href="#" class="nav__link nav__link--footer">Projects</a>
+            </li>
+          </ul>
+        </nav>
 
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        <div class="social-media">
+          <a href="" class="social-links">
+            <i class="fa-brands fa-square-facebook fa-3x"></i>
+          </a>
+          <a href="" class="social-links">
+            <i class="fa-brands fa-instagram fa-3x"></i>
+          </a>
+          <a href="" class="social-links">
+            <i class="fa-brands fa-twitter fa-3x"></i>
+          </a>
+          <a href="" class="social-links">
+            <i class="fa-brands fa-pinterest fa-3x"></i>
+          </a>
+        </div>
+
+        <!-- <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div> -->
       </div>
     </footer>
 

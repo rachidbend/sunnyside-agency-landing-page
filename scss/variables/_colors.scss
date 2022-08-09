@@ -1,15 +1,24 @@
 :root {
   // Primary colors
-  --color-primary-red: hsl(7, 99%, 70%);
-  --color-primary-yellow: hsl(51, 100%, 49%);
+  --color-primary-red: rgba(254, 120, 103, 0.3);
+  --color-primary-red--hover: rgba(254, 120, 103, 1);
+  --color-primary-yellow: rgba(250, 212, 0, 0.3);
+  --color-primary-yellow--hover: rgba(250, 212, 0, 1);
+
   --color-primary-blue: hsl(198, 62%, 26%);
   --color-primary-cyan-dark: hsl(167, 40%, 24%);
   --color-primary-cyan-light: hsl(168, 34%, 41%);
 
   // Neutral colors
-  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-neutral-white: rgb(255, 255, 255);
+  --color-neutral-white--hover: rgba(255, 255, 255, 0.7);
   --color-neutral-blue: hsl(212, 27%, 19%);
   --color-neutral-gray-dark: hsl(213, 9%, 39%);
   --color-neutral-gray-medium: hsl(232, 10%, 55%);
   --color-neutral-gray-light: hsl(210, 4%, 67%);
+
+  --color-neutral-footer: #90d4c5;
+  --color-neutral-footer-icon: hsl(166, 45%, 31%);
+
+  // #90D4C5
 }

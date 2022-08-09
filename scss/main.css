@@ -15,16 +15,21 @@ html {
 }
 
 :root {
-  --color-primary-red: hsl(7, 99%, 70%);
-  --color-primary-yellow: hsl(51, 100%, 49%);
+  --color-primary-red: rgba(254, 120, 103, 0.3);
+  --color-primary-red--hover: rgba(254, 120, 103, 1);
+  --color-primary-yellow: rgba(250, 212, 0, 0.3);
+  --color-primary-yellow--hover: rgba(250, 212, 0, 1);
   --color-primary-blue: hsl(198, 62%, 26%);
   --color-primary-cyan-dark: hsl(167, 40%, 24%);
   --color-primary-cyan-light: hsl(168, 34%, 41%);
-  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-neutral-white: rgb(255, 255, 255);
+  --color-neutral-white--hover: rgba(255, 255, 255, 0.7);
   --color-neutral-blue: hsl(212, 27%, 19%);
   --color-neutral-gray-dark: hsl(213, 9%, 39%);
   --color-neutral-gray-medium: hsl(232, 10%, 55%);
   --color-neutral-gray-light: hsl(210, 4%, 67%);
+  --color-neutral-footer: #90d4c5;
+  --color-neutral-footer-icon: hsl(166, 45%, 31%);
 }
 
 :root {
@@ -72,6 +77,44 @@ html {
   margin-top: 6.8rem;
 }
 
+.hero__arrow {
+  -webkit-animation: arrow-animation 2s;
+          animation: arrow-animation 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes arrow-animation {
+  from {
+    transform: translateY(0%);
+  }
+  40% {
+    transform: translateY(14%);
+  }
+  80% {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes arrow-animation {
+  from {
+    transform: translateY(0%);
+  }
+  40% {
+    transform: translateY(14%);
+  }
+  80% {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
 .header {
   width: 100%;
   display: flex;
@@ -95,6 +138,7 @@ html {
 
 .feature img {
   height: 100%;
+  width: 100%;
 }
 
 .feature-text-box {
@@ -203,11 +247,38 @@ html {
 }
 
 .footer {
-  background-color: var(--color-primary-cyan-light);
+  background-color: var(--color-neutral-footer);
 }
 
 .logo--footer {
   fill: var(--color-primary-blue);
+  margin-bottom: 4rem;
+  transform: translateX(-0.6rem);
+}
+
+.container--footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7.4rem;
+  padding-bottom: 6rem;
+}
+
+.fa-brands {
+  color: var(--color-neutral-footer-icon);
+  transform: scale(0.72);
+  transition: color ease-out 200ms;
+}
+
+.fa-brands:hover {
+  color: var(--color-neutral-white);
+}
+
+.social-links:not(:last-child) {
+  margin-right: 0.8rem;
+  display: inline-block;
+  padding: 0.6rem;
 }
 
 .nav__list {
@@ -223,6 +294,32 @@ html {
   color: var(--color-neutral-white);
   font-family: "Barlow", sans-serif;
   font-weight: 500;
+  transition: all ease-out 200ms;
+}
+
+.nav__link:hover,
+.nav__link:active {
+  color: var(--color-primary-cyan-light);
+}
+
+.nav--footer {
+  margin-bottom: 7.8rem;
+}
+
+.nav__list--footer {
+  gap: 5.6rem;
+}
+
+.nav__link--footer:link,
+.nav__link--footer:visited {
+  color: var(--color-primary-cyan-light);
+  transition: color ease-out 200ms;
+  font-weight: 600;
+}
+
+.nav__link--footer:hover,
+.nav__link--footer:active {
+  color: var(--color-neutral-white);
 }
 
 .btn:link,
@@ -241,6 +338,13 @@ html {
   font-size: 1.6rem;
   letter-spacing: -0.4px;
   font-weight: 700;
+  transition: all ease-out 300ms;
+}
+
+.btn--contact:hover,
+.btn--contact:active {
+  color: var(--color-neutral-white);
+  background-color: #6fcfff;
 }
 
 .btn--features:link,
@@ -250,11 +354,42 @@ html {
   text-transform: uppercase;
   font-weight: 900;
   text-decoration: none;
+  position: relative;
+  z-index: 2;
 }
 
-.btn--features:hover,
-.btn--features:active {
-  background-color: red;
+.btn--features:link::after,
+.btn--features:visited::after {
+  content: "";
+  width: 98%;
+  height: 1rem;
+  border-radius: 10rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  z-index: -1;
+  transition: background-color ease-out 200ms;
+}
+
+.btn--features-yellow:link::after,
+.btn--features-yellow:visited::after {
+  background-color: var(--color-primary-yellow);
+}
+
+.btn--features-red:link::after,
+.btn--features-red:visited::after {
+  background-color: var(--color-primary-red);
+}
+
+.btn--features-yellow:hover::after,
+.btn--features-yellow:active::after {
+  background-color: var(--color-primary-yellow--hover);
+}
+
+.btn--features-red:hover::after,
+.btn--features-red:active::after {
+  background-color: var(--color-primary-red--hover);
 }
 
 .grid {
@@ -263,6 +398,7 @@ html {
 
 .grid--2-cols {
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .grid--3-cols {

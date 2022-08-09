@@ -14,6 +14,14 @@
   font-size: 1.6rem;
   letter-spacing: -0.4px;
   font-weight: 700;
+
+  transition: all ease-out 300ms;
+}
+
+.btn--contact:hover,
+.btn--contact:active {
+  color: var(--color-neutral-white);
+  background-color: #6fcfff;
 }
 
 .btn--features:link,
@@ -23,9 +31,42 @@
   text-transform: uppercase;
   font-weight: 900;
   text-decoration: none;
+  position: relative;
+  z-index: 2;
 }
 
-.btn--features:hover,
-.btn--features:active {
-  background-color: red;
+// .btn--features:hover,
+// .btn--features:active {
+//   background-color: red;
+// }
+
+.btn--features:link::after,
+.btn--features:visited::after {
+  content: "";
+  width: 98%;
+  height: 1rem;
+  border-radius: 10rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  z-index: -1;
+  transition: background-color ease-out 200ms;
+}
+.btn--features-yellow:link::after,
+.btn--features-yellow:visited::after {
+  background-color: var(--color-primary-yellow);
+}
+.btn--features-red:link::after,
+.btn--features-red:visited::after {
+  background-color: var(--color-primary-red);
+}
+// hover and active states
+.btn--features-yellow:hover::after,
+.btn--features-yellow:active::after {
+  background-color: var(--color-primary-yellow--hover);
+}
+.btn--features-red:hover::after,
+.btn--features-red:active::after {
+  background-color: var(--color-primary-red--hover);
 }
