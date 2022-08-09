@@ -1,0 +1,59 @@
+/**********************************/
+/* Below 1200px (Landscape Tablets) */
+/**********************************/
+// 1200px = 75em
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  /*//////////////////
+  // FEATURES
+  //////////////////*/
+  .feature__container {
+    width: 68%;
+    margin-top: 16%;
+    margin-left: 6%;
+  }
+  .feature-overlay {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 54%;
+    text-align: center;
+  }
+  .heading--tertiary {
+    margin-bottom: 2.4rem;
+  }
+
+  /*//////////////////
+  // TESTIMONIALS
+  //////////////////*/
+
+  .container {
+    padding: 14rem 2rem 14rem 2rem;
+    padding-bottom: 15.8rem;
+    padding-top: 15.8rem;
+  }
+  .heading--testimonials {
+    margin-bottom: 6.4rem;
+  }
+  .testimonial__img {
+    margin-bottom: 3.2rem;
+  }
+  .testimonial__text {
+    font-size: 1.6rem;
+
+    line-height: 1.6;
+
+    margin-bottom: 4.8rem;
+  }
+  .testimonial__name {
+    font-size: 1.6rem;
+  }
+
+  .testimonial__job {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,26 @@
+// Large desktop
+// 1600px = 100em
+
+@media (min-width: 100em) {
+  .feature__container {
+    width: 70%;
+  }
+  .heading--secondary {
+    font-size: 4.8rem;
+    margin-bottom: 6.4rem;
+  }
+  .heading--secondary br {
+    display: none;
+  }
+
+  .feature__text {
+    font-size: 2rem;
+    margin-bottom: 8.6rem;
+    line-height: 1.8;
+  }
+
+  .feature-overlay-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+}

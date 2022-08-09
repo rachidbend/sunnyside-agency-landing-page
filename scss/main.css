@@ -408,4 +408,78 @@ html {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+@media (min-width: 100em) {
+  .feature__container {
+    width: 70%;
+  }
+  .heading--secondary {
+    font-size: 4.8rem;
+    margin-bottom: 6.4rem;
+  }
+  .heading--secondary br {
+    display: none;
+  }
+  .feature__text {
+    font-size: 2rem;
+    margin-bottom: 8.6rem;
+    line-height: 1.8;
+  }
+  .feature-overlay-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+}
+/**********************************/
+/* Below 1200px (Landscape Tablets) */
+/**********************************/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  /*//////////////////
+  // FEATURES
+  //////////////////*/
+  .feature__container {
+    width: 68%;
+    margin-top: 16%;
+    margin-left: 6%;
+  }
+  .feature-overlay {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 54%;
+    text-align: center;
+  }
+  .heading--tertiary {
+    margin-bottom: 2.4rem;
+  }
+  /*//////////////////
+  // TESTIMONIALS
+  //////////////////*/
+  .container {
+    padding: 14rem 2rem 14rem 2rem;
+    padding-bottom: 15.8rem;
+    padding-top: 15.8rem;
+  }
+  .heading--testimonials {
+    margin-bottom: 6.4rem;
+  }
+  .testimonial__img {
+    margin-bottom: 3.2rem;
+  }
+  .testimonial__text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+  }
+  .testimonial__name {
+    font-size: 1.6rem;
+  }
+  .testimonial__job {
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
