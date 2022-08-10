@@ -12,6 +12,9 @@
   .heading--secondary br {
     display: none;
   }
+  .heading--tertiary {
+    font-size: 3rem;
+  }
 
   .feature__text {
     font-size: 2rem;
@@ -23,11 +26,11 @@
   }
 
   .feature-overlay {
-    top: 70%;
+    top: 64%;
   }
 
   .feature-overlay-text {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.8;
   }
 

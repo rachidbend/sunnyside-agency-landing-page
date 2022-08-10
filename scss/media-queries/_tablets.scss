@@ -12,8 +12,12 @@
   }
 
   // Hero
+  .section-hero {
+    height: 80vh;
+  }
   .heading--primary {
-    font-size: 4.4rem;
+    font-size: 5rem;
+    letter-spacing: 7px;
   }
 
   .nav-open .hero__arrow {
