@@ -1,0 +1,29 @@
+@media (max-width: 460px) {
+  .grid--2-cols {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  // Features
+  .feature__container {
+    width: 90%;
+  }
+  .heading--secondary {
+    font-size: 4rem;
+    margin-top: 8rem;
+  }
+  .feature__text {
+    font-size: 2.2rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+  }
+  .feature img {
+    height: 100%;
+    width: 100%;
+  }
+  .btn--features:link,
+  .btn--features:visited {
+    font-size: 2rem;
+    margin-bottom: 8rem;
+    display: inline-block;
+  }
+}

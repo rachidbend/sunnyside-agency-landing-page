@@ -22,13 +22,14 @@
   }
   .feature-text-box {
     margin: 0;
+    text-align: center;
   }
 
   .feature__container {
     width: 80%;
   }
   .heading--secondary {
-    font-size: 4.4rem;
+    font-size: 4rem;
   }
   .feature__text {
     font-size: 1.8rem;
@@ -65,7 +66,14 @@
     padding: 14rem 4rem 14rem 4rem;
   }
   .testimonials {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
+  }
+
+  .testimonial__img {
+    margin-bottom: 2.4rem;
+  }
+  .testimonial__text {
+    margin-bottom: 3.2rem;
   }
 }

@@ -166,6 +166,10 @@ html {
   margin-bottom: 4rem;
 }
 
+.feature-img-box {
+  overflow: hidden;
+}
+
 .feature-text-img-box {
   display: flex;
   align-items: center;
@@ -354,6 +358,7 @@ html {
 .btn--features:visited {
   padding: 0.8rem;
   font-size: 1.6rem;
+  letter-spacing: 0.4px;
   text-transform: uppercase;
   font-weight: 900;
   text-decoration: none;
@@ -574,12 +579,13 @@ html {
   }
   .feature-text-box {
     margin: 0;
+    text-align: center;
   }
   .feature__container {
     width: 80%;
   }
   .heading--secondary {
-    font-size: 4.4rem;
+    font-size: 4rem;
   }
   .feature__text {
     font-size: 1.8rem;
@@ -611,7 +617,41 @@ html {
     padding: 14rem 4rem 14rem 4rem;
   }
   .testimonials {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
+  }
+  .testimonial__img {
+    margin-bottom: 2.4rem;
+  }
+  .testimonial__text {
+    margin-bottom: 3.2rem;
+  }
+}
+@media (max-width: 460px) {
+  .grid--2-cols {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .feature__container {
+    width: 90%;
+  }
+  .heading--secondary {
+    font-size: 4rem;
+    margin-top: 8rem;
+  }
+  .feature__text {
+    font-size: 2.2rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+  }
+  .feature img {
+    height: 100%;
+    width: 100%;
+  }
+  .btn--features:link,
+.btn--features:visited {
+    font-size: 2rem;
+    margin-bottom: 8rem;
+    display: inline-block;
   }
 }/*# sourceMappingURL=main.css.map */
