@@ -7,18 +7,8 @@
     font-size: 50%;
   }
 
-  // Navigation
-  .btn--nav {
-    display: block;
-    background: none;
-    border: none;
-  }
-  .nav--main {
-    display: none;
-  }
-
-  .nav-open .nav--main {
-    display: flex;
+  .header {
+    position: relative;
   }
 
   // Hero
@@ -72,5 +62,83 @@
   .feature-overlay-text {
     font-size: 1.6rem;
     line-height: 1.5;
+  }
+
+  .header {
+    padding: 4rem 3rem 4rem 3rem;
+  }
+
+  .logo {
+    width: 15.4rem;
+  }
+
+  /*/////////////////////
+  // MOBILE NAVIGATION //
+  /////////////////////*/
+  ///
+  ///   // Navigation
+  .btn--nav {
+    display: block;
+    background: none;
+    border: none;
+  }
+  .nav--main {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    transition: all ease-out 400ms;
+  }
+
+  .nav-open .nav--main {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+  .nav--main {
+    background-color: var(--color-neutral-background);
+    position: absolute;
+    top: 13.2rem;
+    right: 3rem;
+    left: 3rem;
+    z-index: 100;
+
+    // width: 100%;
+  }
+  .nav--main::before {
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: 30px solid transparent;
+    border-right: 30px solid var(--color-neutral-background);
+
+    // background-color: var(--color-neutral-white);
+    position: absolute;
+    top: -3rem;
+    right: 0;
+  }
+  .nav__list {
+    flex-direction: column;
+    justify-content: center;
+    gap: 4.2rem;
+    margin: 0 auto;
+    padding: 5rem 0;
+  }
+
+  .nav__link:link,
+  .nav__link:visited {
+    color: var(--color-neutral-gray-medium);
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  .btn--contact:link,
+  .btn--contact:visited {
+    background-color: var(--color-primary-yellow--hover);
+
+    font-size: 2rem;
+    color: var(--color-neutral-blue);
+    display: inline-block;
+    padding: 1.8rem 3rem;
   }
 }
