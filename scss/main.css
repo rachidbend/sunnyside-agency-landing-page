@@ -515,6 +515,9 @@ html {
   .heading--primary {
     font-size: 4.4rem;
   }
+  .nav-open .hero__arrow {
+    opacity: 0;
+  }
   .feature-text-box {
     align-items: center;
   }
