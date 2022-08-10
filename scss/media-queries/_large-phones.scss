@@ -44,7 +44,8 @@
     width: 80%;
   }
 
-  .heading--tertiary {
+  .heading--tertiary:link,
+  .heading--testimonials:visited {
     font-size: 3.2rem;
   }
 
@@ -55,9 +56,10 @@
 
   // Testimonials
 
-  .heading--testimonials {
+  .heading--testimonials:link,
+  .heading--testimonials:visited {
     margin-bottom: 6.4rem;
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
   .testimonials {
     gap: 10rem;

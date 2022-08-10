@@ -3,6 +3,7 @@
     grid-template-columns: auto;
     grid-template-rows: auto;
   }
+
   // Features
   .feature__container {
     width: 90%;
@@ -25,5 +26,67 @@
     font-size: 2rem;
     margin-bottom: 8rem;
     display: inline-block;
+  }
+
+  // overlay
+  .feature-text-img-box {
+    position: relative;
+    height: 75rem;
+  }
+  .feature-text-img-box img {
+    height: 100%;
+    width: auto;
+  }
+  .feature-overlay {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  .heading--tertiary:link,
+  .heading--tertiary:visited {
+    font-size: 3.6rem;
+    margin-bottom: 3.6rem;
+  }
+  .feature-overlay-text {
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+
+  // Testimonials
+  .testimonials {
+    gap: 8.6rem;
+  }
+
+  .container {
+    padding: 8rem 3.4rem 8rem 3.4rem;
+  }
+  .heading--testimonials {
+    font-size: 1.9rem;
+    margin-bottom: 8rem;
+  }
+  .testimonials {
+    width: 100%;
+  }
+  .testimonial__img {
+    height: 9rem;
+    width: 9rem;
+    margin-bottom: 4rem;
+  }
+  .testimonial__text {
+    font-size: 2.2rem;
+    line-height: 1.8;
+    margin-bottom: 4rem;
+  }
+  .testimonial__name {
+    font-size: 2.2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .testimonial__job {
+    font-size: 1.7rem;
   }
 }
