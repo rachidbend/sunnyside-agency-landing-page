@@ -596,21 +596,21 @@ html {
     top: -3rem;
     right: 0;
   }
-  .nav__list {
+  .nav--main .nav__list {
     flex-direction: column;
     justify-content: center;
     gap: 4.2rem;
     margin: 0 auto;
     padding: 5rem 0;
   }
-  .nav__link:link,
-.nav__link:visited {
+  .nav--main .nav__link:link,
+.nav--main .nav__link:visited {
     color: var(--color-neutral-gray-medium);
     font-size: 2.4rem;
     font-weight: 600;
   }
-  .btn--contact:link,
-.btn--contact:visited {
+  .nav--main .btn--contact:link,
+.nav--main .btn--contact:visited {
     background-color: var(--color-primary-yellow--hover);
     font-size: 2rem;
     color: var(--color-neutral-blue);
