@@ -1,0 +1,22 @@
+/**********************************/
+/* Below 704px (Phones) */
+/**********************************/
+
+@media (max-width: 44em) {
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // Features
+  .feature--img-box:nth-child(2) {
+    grid-row: 1;
+  }
+}

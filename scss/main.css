@@ -522,7 +522,7 @@ html {
     align-items: center;
   }
   .feature__container {
-    width: 62%;
+    width: 70%;
     margin-top: 0;
     margin-left: 0;
   }
@@ -544,14 +544,31 @@ html {
   .feature-overlay {
     top: 58%;
     left: 50%;
-    width: 54%;
+    width: 74%;
     text-align: center;
   }
   .heading--tertiary {
     font-size: 2.8rem;
   }
   .feature-overlay-text {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.5;
+  }
+}
+/**********************************/
+/* Below 704px (Phones) */
+/**********************************/
+@media (max-width: 44em) {
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .feature--img-box:nth-child(2) {
+    grid-row: 1;
   }
 }/*# sourceMappingURL=main.css.map */
