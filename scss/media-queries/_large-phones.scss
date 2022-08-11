@@ -3,6 +3,10 @@
 /**********************************/
 
 @media (max-width: 44em) {
+  /*/////////////////////
+  // GRID
+  /////////////////////*/
+
   .grid--2-cols {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -17,37 +21,55 @@
     grid-template-rows: 1fr 1fr;
   }
 
-  // Features
-  .feature--img-box:nth-child(2) {
-    grid-row: 1;
+  /*/////////////////////
+  // HERO
+  /////////////////////*/
+  .section-hero {
+    background-image: url("../../images/mobile/image-header.jpg");
   }
-  .feature-text-box {
-    margin: 0;
-    text-align: center;
+
+  /*/////////////////////
+  // HEADING
+  /////////////////////*/
+
+  .heading--secondary {
+    font-size: 4rem;
   }
+
+  .heading--tertiary {
+    font-size: 3.2rem;
+  }
+
+  /*/////////////////////
+  // FEATURES
+  /////////////////////*/
 
   .feature__container {
     width: 80%;
   }
-  .heading--secondary {
-    font-size: 4rem;
+
+  .feature--img-box:nth-child(2) {
+    grid-row: 1;
   }
+
+  .feature-text-box {
+    text-align: center;
+    margin: 0;
+  }
+
   .feature__text {
     font-size: 1.8rem;
     line-height: 1.8;
   }
+
   .btn--features:link,
   .btn--features:visited {
     font-size: 1.6rem;
   }
-  .feature-overlay {
-    top: 60%;
-    width: 80%;
-  }
 
-  .heading--tertiary:link,
-  .heading--testimonials:visited {
-    font-size: 3.2rem;
+  .feature-overlay {
+    width: 80%;
+    top: 60%;
   }
 
   .feature-overlay-text {
@@ -55,21 +77,17 @@
     line-height: 1.8;
   }
 
-  // Testimonials
+  /*/////////////////////
+  // TESTIMONIALS
+  /////////////////////*/
 
-  .heading--testimonials:link,
-  .heading--testimonials:visited {
-    margin-bottom: 6.4rem;
-    font-size: 2.1rem;
-  }
-  .testimonials {
-    gap: 10rem;
-  }
   .container {
     padding: 14rem 4rem 14rem 4rem;
   }
+
   .testimonials {
-    width: 70%;
+    gap: 10rem;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -77,14 +95,13 @@
     font-size: 1.9rem;
     margin-bottom: 8rem;
   }
-  .testimonials {
-    width: 100%;
-  }
+
   .testimonial__img {
     height: 9rem;
     width: 9rem;
     margin-bottom: 4rem;
   }
+
   .testimonial__text {
     font-size: 2.2rem;
     line-height: 1.8;
@@ -99,7 +116,10 @@
     font-size: 1.7rem;
   }
 
-  // Gallery
+  /*/////////////////////
+  // GALLERY
+  /////////////////////*/
+
   .gallery--desktop {
     display: none;
   }

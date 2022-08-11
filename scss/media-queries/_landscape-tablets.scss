@@ -4,22 +4,29 @@
 // 1200px = 75em
 @media (max-width: 75em) {
   html {
+    // making over-all size of he page smaller
     font-size: 56.25%;
+  }
+  /*//////////////////
+  // HEADINGS
+  //////////////////*/
+
+  .heading--tertiary {
+    margin-bottom: 2.4rem;
   }
 
   /*//////////////////
   // FEATURES
   //////////////////*/
+
   .feature__container {
     width: 68%;
     margin-top: 16%;
     margin-left: 6%;
   }
+
   .feature-overlay {
     top: 60%;
-  }
-  .heading--tertiary {
-    margin-bottom: 2.4rem;
   }
 
   /*//////////////////
@@ -31,21 +38,23 @@
   }
 
   .container {
-    padding: 14rem 2rem 14rem 2rem;
+    padding: 14rem 2rem;
   }
+
   .heading--testimonials {
     margin-bottom: 6.4rem;
   }
+
   .testimonial__img {
     margin-bottom: 3.2rem;
   }
+
   .testimonial__text {
     font-size: 1.6rem;
-
     line-height: 1.6;
-
     margin-bottom: 4.8rem;
   }
+
   .testimonial__name {
     font-size: 1.6rem;
   }

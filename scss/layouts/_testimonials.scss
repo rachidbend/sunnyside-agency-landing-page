@@ -1,22 +1,21 @@
 .section-testimonials {
-  background-color: #fffbf8;
   font-family: var(--font-barlow);
   font-weight: 600;
+  background-color: var(--color-neutral-background);
 }
 
 .container {
   max-width: 110rem;
   text-align: center;
   margin: 0 auto;
-
   padding: 15.8rem 0 15.8rem 0;
 }
 
 .heading--testimonials {
-  text-transform: uppercase;
-  letter-spacing: 4.4px;
   font-size: 2.1rem;
+  letter-spacing: 4.4px;
   color: var(--color-neutral-gray-light);
+  text-transform: uppercase;
   margin-bottom: 8.2rem;
 }
 
@@ -29,10 +28,8 @@
 
 .testimonial__text {
   font-size: 1.8rem;
-
-  color: var(--color-neutral-gray-dark);
   line-height: 1.7;
-
+  color: var(--color-neutral-gray-dark);
   margin-bottom: 7rem;
 }
 

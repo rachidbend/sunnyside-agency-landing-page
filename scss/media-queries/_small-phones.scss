@@ -1,74 +1,95 @@
 @media (max-width: 460px) {
+  /*/////////////////////
+  // GRID
+  /////////////////////*/
+
   .grid--2-cols {
+    // make the content dictate the size
     grid-template-columns: auto;
     grid-template-rows: auto;
   }
 
-  // Features
-  .feature__container {
-    width: 90%;
-  }
+  /*/////////////////////
+  // HEADING
+  /////////////////////*/
+
   .heading--secondary {
     font-size: 4rem;
     margin-top: 8rem;
   }
+
+  .heading--tertiary {
+    font-size: 3.6rem;
+    margin-bottom: 3.6rem;
+  }
+
+  /*/////////////////////
+  // FEATURES
+  /////////////////////*/
+
+  .feature__container {
+    width: 90%;
+  }
+
   .feature__text {
     font-size: 2.2rem;
     line-height: 1.7;
     margin-bottom: 3rem;
   }
+
   .feature img {
     height: 100%;
     width: 100%;
   }
+
   .btn--features:link,
   .btn--features:visited {
+    display: inline-block;
     font-size: 2rem;
     margin-bottom: 8rem;
-    display: inline-block;
   }
 
-  // overlay
+  // OVERLAY //
   .feature-text-img-box {
     position: relative;
-    height: 75rem;
   }
+
   .feature-text-img-box img {
     height: 100%;
     width: auto;
   }
+
   .feature-overlay {
+    width: 90%;
     position: absolute;
     top: 66%;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
     text-align: center;
   }
 
-  .heading--tertiary:link,
-  .heading--tertiary:visited {
-    font-size: 3.6rem;
-    margin-bottom: 3.6rem;
-  }
   .feature-overlay-text {
     font-size: 2rem;
     line-height: 1.7;
   }
 
-  // Testimonials
+  /*/////////////////////
+  // TESTIMONIALS
+  /////////////////////*/
+  .container {
+    padding: 8rem 3.4rem;
+  }
+
   .testimonials {
     gap: 8.6rem;
   }
 
-  .container {
-    padding: 8rem 3.4rem 8rem 3.4rem;
+  .testimonials {
+    width: 100%;
   }
+
   .heading--testimonials {
     font-size: 1.9rem;
     margin-bottom: 8rem;
-  }
-  .testimonials {
-    width: 100%;
   }
 }

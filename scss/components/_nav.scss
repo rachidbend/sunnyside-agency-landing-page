@@ -1,6 +1,4 @@
-.nav {
-}
-
+// Header navigation
 .nav__list {
   display: flex;
   align-items: center;
@@ -9,13 +7,12 @@
 
 .nav__link:link,
 .nav__link:visited {
-  font-size: 1.8rem;
   text-decoration: none;
-  color: var(--color-neutral-white);
+  font-size: 1.8rem;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
-
-  transition: all ease-out 200ms;
+  color: var(--color-neutral-white);
+  transition: all ease-out 300ms;
 }
 
 .nav__link:hover,
@@ -23,6 +20,7 @@
   color: var(--color-primary-cyan-light);
 }
 
+// Footer navigation
 .nav--footer {
   margin-bottom: 7.8rem;
 }
@@ -43,6 +41,7 @@
   color: var(--color-neutral-white);
 }
 
+// mobile navigation button
 .btn--nav {
   display: none;
   opacity: 0.5;

@@ -21,43 +21,45 @@
 .btn--contact:hover,
 .btn--contact:active {
   color: var(--color-neutral-white);
-  background-color: #6fcfff;
+  background-color: var(--color-btn-contact-hover);
 }
 
 .btn--features:link,
 .btn--features:visited {
-  padding: 0.8rem;
+  position: relative;
   font-size: 1.6rem;
   letter-spacing: 0.4px;
-  text-transform: uppercase;
+  padding: 0.8rem;
   font-weight: 900;
+  text-transform: uppercase;
   text-decoration: none;
-  position: relative;
   z-index: 2;
 }
 
 .btn--features:link::after,
 .btn--features:visited::after {
   content: "";
-  width: 98%;
-  height: 1rem;
-  border-radius: 10rem;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -60%);
+  width: 98%;
+  height: 1rem;
+  border-radius: 10rem;
   z-index: -1;
-  transition: background-color ease-out 200ms;
+  transition: background-color ease-out 300ms;
 }
+// feature button with yellow line
 .btn--features-yellow:link::after,
 .btn--features-yellow:visited::after {
   background-color: var(--color-primary-yellow);
 }
+// feature button with red line
 .btn--features-red:link::after,
 .btn--features-red:visited::after {
   background-color: var(--color-primary-red);
 }
-// hover and active states
+// hover and active states of feature buttons
 .btn--features-yellow:hover::after,
 .btn--features-yellow:active::after {
   background-color: var(--color-primary-yellow--hover);

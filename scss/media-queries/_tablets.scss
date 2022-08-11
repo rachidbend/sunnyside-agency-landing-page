@@ -7,24 +7,51 @@
     font-size: 50%;
   }
 
+  /*//////////////////
+  // HEADER
+  //////////////////*/
+
   .header {
     position: relative;
   }
 
-  // Hero
+  /*//////////////////
+  // HERO
+  //////////////////*/
+
   .section-hero {
     height: 80vh;
   }
+
+  // when mobile navigatio is open hide arrow
+  .nav-open .hero__arrow {
+    opacity: 0;
+  }
+
+  /*//////////////////
+  // HEADING
+  //////////////////*/
+
   .heading--primary {
     font-size: 5rem;
     letter-spacing: 7px;
   }
 
-  .nav-open .hero__arrow {
-    opacity: 0;
+  .heading--secondary {
+    font-size: 3.2rem;
   }
 
-  // Features
+  .heading--secondary br {
+    display: none;
+  }
+
+  .heading--tertiary {
+    font-size: 2.8rem;
+  }
+
+  /*//////////////////
+  // FEATURES
+  //////////////////*/
 
   .feature-text-box {
     align-items: center;
@@ -32,17 +59,12 @@
 
   .feature__container {
     width: 70%;
+    // reseting margins
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
   }
 
-  .heading--secondary {
-    font-size: 3.2rem;
-  }
-  .heading--secondary br {
-    display: none;
-  }
   .feature__text {
     font-size: 1.6rem;
     line-height: 1.7;
@@ -55,16 +77,10 @@
   }
 
   .feature-overlay {
+    width: 74%;
     top: 58%;
     left: 50%;
-
-    width: 74%;
     text-align: center;
-  }
-
-  .heading--tertiary:link,
-  .heading--tertiary:visited {
-    font-size: 2.8rem;
   }
 
   .feature-overlay-text {
@@ -83,14 +99,15 @@
   /*/////////////////////
   // MOBILE NAVIGATION //
   /////////////////////*/
-  ///
-  ///   // Navigation
+
   .btn--nav {
     display: block;
     background: none;
     border: none;
   }
+
   .nav--main {
+    // hiding mobile nav to be able to animate it
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
@@ -99,32 +116,34 @@
   }
 
   .nav-open .nav--main {
+    // showing mobile nav
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
   }
+
   .nav--main {
-    background-color: var(--color-neutral-background);
     position: absolute;
     top: 13.2rem;
     right: 3rem;
     left: 3rem;
+    background-color: var(--color-neutral-background);
     z-index: 100;
-
-    // width: 100%;
   }
+
   .nav--main::before {
+    // this is the little triangle in the top of the nav
     content: "";
     height: 0;
     width: 0;
-    border-top: 30px solid transparent;
-    border-right: 30px solid var(--color-neutral-background);
-
-    // background-color: var(--color-neutral-white);
     position: absolute;
     top: -3rem;
     right: 0;
+    // this is what makes the shape
+    border-top: 30px solid transparent;
+    border-right: 30px solid var(--color-neutral-background);
   }
+
   .nav--main .nav__list {
     flex-direction: column;
     justify-content: center;
@@ -135,18 +154,22 @@
 
   .nav--main .nav__link:link,
   .nav--main .nav__link:visited {
-    color: var(--color-neutral-gray-medium);
     font-size: 2.4rem;
     font-weight: 600;
+    color: var(--color-neutral-gray-medium);
   }
 
   .nav--main .btn--contact:link,
   .nav--main .btn--contact:visited {
-    background-color: var(--color-primary-yellow--hover);
-
+    display: inline-block;
     font-size: 2rem;
     color: var(--color-neutral-blue);
-    display: inline-block;
+    background-color: var(--color-primary-yellow--hover);
     padding: 1.8rem 3rem;
+  }
+
+  .nav--main .btn--contact:hover,
+  .nav--main .btn--contact:active {
+    background-color: var(--color-primary-yellow);
   }
 }

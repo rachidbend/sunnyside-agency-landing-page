@@ -3,8 +3,9 @@
 }
 
 .grid--2-cols {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  // to make sure images and content have enough area
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .grid--3-cols {

@@ -1,10 +1,10 @@
 // Large desktop
 // 1600px = 100em
-
+// used min-width to only start applying these style when the viewport is larger than 1600px
 @media (min-width: 100em) {
-  .feature__container {
-    width: 70%;
-  }
+  /*//////////////////
+  // HEADINGS
+  //////////////////*/
   .heading--secondary {
     font-size: 4.8rem;
     margin-bottom: 6.4rem;
@@ -16,11 +16,19 @@
     font-size: 3rem;
   }
 
+  /*//////////////////
+  // FEATURES
+  //////////////////*/
+  .feature__container {
+    width: 70%;
+  }
+
   .feature__text {
     font-size: 2rem;
     margin-bottom: 8.6rem;
     line-height: 1.8;
   }
+
   .btn--features {
     font-size: 1.8rem;
   }
@@ -34,7 +42,9 @@
     line-height: 1.8;
   }
 
-  // Testimonials
+  /*//////////////////
+  // TESTIMONIALS
+  //////////////////*/
   .grid--3-cols {
     gap: 8rem;
   }
